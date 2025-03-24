@@ -48,7 +48,6 @@ module.exports = {
       let: 'never',
       const: 'never'
     }],
-    'semi': 'warn',
     'space-in-parens': ['warn', 'never'],
     'space-before-blocks': 'warn',
     'unicode-bom': 'warn',
