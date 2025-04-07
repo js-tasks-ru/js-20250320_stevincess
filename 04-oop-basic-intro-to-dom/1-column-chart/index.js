@@ -95,7 +95,7 @@ export default class ColumnChart {
       this.#titleElement.innerHTML = `${this.#options.label || ''} <a class="column-chart__link" href="${this.#options.link}">View all</a>`
     }
     else {
-      this.#titleElement.innerText = `${this.#options.label || ''}`
+      this.#titleElement.textContent = `${this.#options.label || ''}`
     }
 
 
@@ -103,7 +103,7 @@ export default class ColumnChart {
       ? this.#options.formatHeading(this.#options.value)
       : this.#options.value
 
-    this.#columnChartContainer.header.innerText = valueTextHeader
+    this.#columnChartContainer.header.textContent = valueTextHeader
 
 
     if (!this.#columnProps.length) {
