@@ -13,8 +13,29 @@
       <div id="customers" class="dashboard__chart_customers"></div>
     </div>
 
+
+
+    <!--<div class="column-chart" style="&#45;&#45;chart-height: 50">-->
+    <!--  <div class="column-chart__title">-->
+    <!--    Total sales-->
+
+    <!--  </div>-->
+    <!--  <div class="column-chart__container">-->
+    <!--    <div data-element="header" class="column-chart__header">-->
+    <!--      $243,437-->
+    <!--    </div>-->
+    <!--    <div data-element="body" class="column-chart__chart">-->
+    <!--      <div style="&#45;&#45;value: 18" data-tooltip="38%"></div><div style="&#45;&#45;value: 25" data-tooltip="50%"></div><div style="&#45;&#45;value: 12" data-tooltip="25%"></div><div style="&#45;&#45;value: 50" data-tooltip="100%"></div><div style="&#45;&#45;value: 21" data-tooltip="44%"></div><div style="&#45;&#45;value: 9" data-tooltip="19%"></div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+    <!--</div>-->
+
+
+
     <script type="module">
       import ColumnChart from './index.js';
+
+      // http-server .
 
       const ordersData = [];
       const salesData = [ 30, 40, 20, 80, 35, 15 ];
@@ -39,6 +60,12 @@
         label: 'customers',
         value: 321
       });
+
+
+      const orders = document.getElementById('orders')
+      const sales = document.getElementById('sales')
+      const customers = document.getElementById('customers')
+
 
       orders.append(ordersChart.element);
       sales.append(salesChart.element);
