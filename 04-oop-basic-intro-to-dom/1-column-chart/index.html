@@ -13,8 +13,12 @@
       <div id="customers" class="dashboard__chart_customers"></div>
     </div>
 
+
+
     <script type="module">
       import ColumnChart from './index.js';
+
+      // http-server .
 
       const ordersData = [];
       const salesData = [ 30, 40, 20, 80, 35, 15 ];
@@ -39,6 +43,12 @@
         label: 'customers',
         value: 321
       });
+
+
+      const orders = document.getElementById('orders')
+      const sales = document.getElementById('sales')
+      const customers = document.getElementById('customers')
+
 
       orders.append(ordersChart.element);
       sales.append(salesChart.element);
